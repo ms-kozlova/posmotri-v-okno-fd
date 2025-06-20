@@ -29,6 +29,7 @@ html {
     display: flex;
     padding: 133px 30px;
     justify-content: center;
+    align-items: center;
 }
 
 h1,
@@ -140,6 +141,10 @@ ol {
     cursor: pointer;
 }
 
+.search-form__label:has(.search-form__checkbox):active {
+    text-decoration: none;
+}
+
 .search-form__checkbox-list {
     display: flex;
     gap: 15px;
@@ -172,10 +177,6 @@ ol {
     opacity: 1;
 }
 
-.search-form__pseudo-checkbox:hover:active + .search-form__label-text {
-    text-decoration: none;
-}
-
 .button {
     background-color: transparent;
     border: 1px solid #fff;
@@ -187,14 +188,14 @@ ol {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 
-.button:hover:active {
-    background-color: #545050;
-    text-decoration: none;
-}
-
 .button:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.button:active {
+    background-color: #545050;
+    text-decoration: none;
 }
 
 .button:focus {
@@ -221,7 +222,12 @@ ol {
 }
 
 .title {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 94%;
+    text-transform: uppercase;
 }
 
 .content__list-container {
@@ -250,14 +256,14 @@ ol {
     background-color: #545050;
 }
 
-.content__card-link:hover:active {
-    background-color: #545050;
-    text-decoration: none;
-}
-
 .content__card-link:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.content__card-link:active {
+    background-color: #545050;
+    text-decoration: none;
 }
 
 .content__card-link:focus {
@@ -295,14 +301,6 @@ ol {
 
 .search-form__label-text {
     line-height: 25px;
-}
-
-.title {
-    font-family: Oswald, sans-serif;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 94%;
-    text-transform: uppercase;
 }
 
 .content__accent {
