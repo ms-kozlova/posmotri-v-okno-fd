@@ -69,16 +69,13 @@ ol {
 .content {
     width: 1140px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 711px 399px;
     grid-gap: 30px;
     align-items: end;
-
 }
 
 .result__video-container {
-    width: 711px;
-    object-fit: contain;
-    margin-bottom: 16px;
+    position: relative;
 }
 
 .result__video {
@@ -140,7 +137,7 @@ ol {
 
 .search-form__checkbox-list {
     display: flex;
-    gap: 15px;
+    gap: 18px;
 }
 
 .search-form__pseudo-checkbox {
@@ -169,9 +166,6 @@ ol {
 .search-form__pseudo-checkbox:active + .search-form__pseudo-checkbox::after {
     opacity: 1;
 }
-
-/*.search-form__label:has(:focus-visible) {*/
-/*}*/
 
 .button {
     background-color: transparent;
@@ -216,7 +210,7 @@ ol {
 }
 
 .title {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 
 .content__list-container {
@@ -265,12 +259,9 @@ ol {
 .content__video-card {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 30px;
 }
 
 .content__video-card-thumbnail {
-    object-fit: contain;
-    object-position: center;
     width: 194px;
     height: 103px;
 }
@@ -284,8 +275,12 @@ ol {
 .search-form__fieldset-title {
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 20px;
     margin-bottom: 5px;
+}
+
+.search-form__label-text {
+    line-height: 25px;
 }
 
 .title {
@@ -313,19 +308,15 @@ ol {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    display: block; /* или inline-block, но не inline */
+    display: block;
     max-width: 100%;
 }
 
 .content__video-card-description {
     font-weight: 400;
     font-size: 18px;
-    line-height: 16.2px;
+    line-height: 10px;
     line-clamp: none;
-}
-
-.result__video-container {
-    position: relative;
 }
 
 .content__list-container {
@@ -333,8 +324,3 @@ ol {
     width: 100%;
     max-width: 100%;
 }
-
-
-/*Обводка карточек*/
-/*Обводка текстового поля*/
-
